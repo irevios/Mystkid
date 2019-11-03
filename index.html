@@ -1,14 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ocio infantil</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Mystkid</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="description" content="Ludoteca fantástica para niños"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	
+<body onload="navScroll()">
+	<div class="container-fluid">
+
+		<!-- Navegacion -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top transparente">
+		      <a class="navbar-brand" href="#">Mystkid</a>
+		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		      </button>
+		      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		        <ul class="navbar-nav ml-auto">
+		          <li class="nav-item active">
+		            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="sobre.html">Sobre nosotros</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="servicios.html">Servicios</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="contacto.html">Contacto</a>
+		          </li>
+		        </ul> 
+		    </nav>
+
+		<!-- Cabecera -->
+		<div class="jumbotron jumbotron-fluid cabecera">
+			<div class="container">
+				<h2 class="display-2">Mystkid</h2>
+    			<p class="lead">Encuentra la mágica diversión</p>
+			</div>
+		</div>
+
+		<!-- Descripcion -->
+		<div class="row descripcion align-items-center justify-content-center">
+			<div class="col-12 col-lg-6">
+				<h2 class="display-5 text-center">Aprender puede ser divertido</h2>
+    			<p class="lead text-center">Favorecemos el desarrollo a través del juego y la experiencia</p>
+    			<p class="text-center"><strong>Mystkid</strong> es una ludoteca que ofrece servicios de ludoteca, apoyo escolar, cumpleaños, celebraciones, talleres diversos y fiestas temáticas y de pijamas. Todo ello para niños de cualquier edad. Nos adaptamos a cualquier necesidad de horario. Si tu peque no va a la guardería… ¿por qué no lo traes a nuestra ludoteca? Aquí nos ocuparemos de que juegue y se socialice con otros niños como él, en un entorno amable y controlado. Tenemos flexibilidad de horarios y bonos.</p>
+    			<div class="text-center"><a href="servicios.html"><button class="btn btn-outline-light btn-lg">Servicios</button></a></div>
+			</div>
+		</div>
+
+		<!-- Identifica -->
+		<div class="container identifica">
+	      <h2 class="text-center mt-0">Nos identifica</h2>
+	      <div class="row">
+	        <div class="col-lg-3 col-md-6 text-center">
+	          <div class="mt-5">
+	            <i class="fa fa-4x fa-diamond text-primary mb-4"></i>
+	            <h3 class="h4 mb-2">Diferentes</h3>
+	            <p class="text-muted mb-0">Queremos ofrecer un servicio diferente a lo habitual (parques de bolas, campus deportivos, etc).</p>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 text-center">
+	          <div class="mt-5">
+	            <i class="fa fa-4x fa-cloud text-primary mb-4"></i>
+	            <h3 class="h4 mb-2">Delicadeza</h3>
+	            <p class="text-muted mb-0">El trato con los niños es cercano y con el máximo cariño, cuidando al máximo los detalles.</p>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 text-center">
+	          <div class="mt-5">
+	            <i class="fa fa-4x fa-puzzle-piece text-primary mb-4"></i>
+	            <h3 class="h4 mb-2">Diversión</h3>
+	            <p class="text-muted mb-0">El objetivo final de todas las actividades de Imagic es que los niños disfruten y lo pasen bien.</p>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 text-center">
+	          <div class="mt-5">
+	            <i class="fa fa-4x fa-clock-o text-primary mb-4"></i>
+	            <h3 class="h4 mb-2">Disponibilidad</h3>
+	            <p class="text-muted mb-0">Nos queremos destacar por estar disponibles siempre que se necesite, incluso ofrecemos fiestas de pijamas.</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <!-- Galeria -->
+	    <div class="galeria">
+		    <div class="row">
+		    	<div class="col-6 col-lg-4 foto"></div>
+		    	<div class="col-6 col-lg-4 foto"></div>
+		    	<div class="col-6 col-lg-4 foto"></div>
+		    	<div class="col-6 col-lg-4 foto"></div>
+		    	<div class="col-6 col-lg-4 foto"></div>
+		    	<div class="col-6 col-lg-4 foto"></div>
+		    </div>
+		</div>
+		<!-- Footer -->
+		<footer class="footer text-center">
+			<p>Copyright © 2019 - I.E.S. Hermanos Machado | 2º Desarrollo de Aplicaciones Web | Irene Viñas Ostos</p>
+		</footer>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

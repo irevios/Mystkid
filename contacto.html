@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mystkid</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="description" content="Ludoteca fantástica para niños"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+
+		<!-- Navegacion -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		      <a class="navbar-brand" href="#">Mystkid</a>
+		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		      </button>
+		      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		        <ul class="navbar-nav ml-auto">
+		          <li class="nav-item">
+		            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="sobre.html">Sobre nosotros</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="servicios.html">Servicios</a>
+		          </li>
+		          <li class="nav-item active">
+		            <a class="nav-link" href="contacto.html">Contacto</a>
+		          </li>
+		        </ul> 
+		    </nav>
+
+		<!-- Contacto -->
+		<div class="row servicios align-items-center justify-content-center">
+			<div class="col-12 col-lg-6">
+				<h2 class="display-5 text-center">Contacto</h2>
+    			<p class="text-center">¿Necesitas más información? ¡Contáctanos!</p>
+			</div>
+		</div>
+
+		<!-- Formulario -->
+		<div class="container formulario">
+			<form class="needs-validation">
+				<div class="form-row">
+			  <div class="form-group col-12 col-md-4">
+			    <label for="nombre">Nombre</label> 
+			    <input id="nombre" name="nombre" type="text" required="required" class="form-control form-control-lg">
+			    <div class="invalid-feedback">Dinos tu nombre</div>
+			  </div>
+			  <div class="form-group col-12 col-md-8">
+			    <label for="email">Email</label> 
+			    <input id="email" name="email" type="text" required="required" class="form-control form-control-lg">
+			    <div class="invalid-feedback">Necesitamos un email para contactarte</div>
+			  </div>
+			</div>
+			<div class="form-row">
+			  <div class="form-group col-12 col-md-5">
+			    <label for="edad">Edad de su hijo/a</label> 
+			    <div>
+			      <select id="edad" name="edad" class="custom-select" aria-describedby="edadHelpBlock">
+			        <option value="0">Entre 0-3</option>
+			        <option value="4">Entre 4-6</option>
+			        <option value="7">Entre 7-10</option>
+			      </select> 
+			      <span id="edadHelpBlock" class="form-text text-muted">(Opcional)</span>
+			    </div>
+			  </div>
+			  <div class="form-group col-12 col-md-7">
+			    <label>Nos escribe por:</label> 
+			    <div>
+			      <div class="custom-control custom-radio custom-control-inline">
+			        <input name="radio" id="radio_0" type="radio" required="required" class="custom-control-input" value="precio"> 
+			        <label for="radio_0" class="custom-control-label">Precio</label>
+			      </div>
+			      <div class="custom-control custom-radio custom-control-inline">
+			        <input name="radio" id="radio_1" type="radio" required="required" class="custom-control-input" value="servicio"> 
+			        <label for="radio_1" class="custom-control-label">Servicio</label>
+			      </div>
+			      <div class="custom-control custom-radio custom-control-inline">
+			        <input name="radio" id="radio_2" type="radio" required="required" class="custom-control-input" value="seguridad"> 
+			        <label for="radio_2" class="custom-control-label">Seguridad</label>
+			      </div>
+			      <div class="custom-control custom-radio custom-control-inline">
+			        <input name="radio" id="radio_3" type="radio" required="required" class="custom-control-input" value="sugerencia"> 
+			        <label for="radio_3" class="custom-control-label">Sugerencia</label>
+			      </div>
+			    </div>
+			    <div class="invalid-feedback">¿Cuál es la razón por la que nos escribes?</div>
+			  </div>
+			</div>
+			<div class="form-row">
+			  <div class="form-group col-12 col-md-6">
+			    <label>¿Por donde nos conoció?</label> 
+			    <div>
+			      <div class="custom-controls-stacked">
+			        <div class="custom-control custom-checkbox">
+			          <input name="checkbox" id="checkbox_0" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="redes"> 
+			          <label for="checkbox_0" class="custom-control-label">Redes Sociales</label>
+			        </div>
+			      </div>
+			      <div class="custom-controls-stacked">
+			        <div class="custom-control custom-checkbox">
+			          <input name="checkbox" id="checkbox_1" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="tv"> 
+			          <label for="checkbox_1" class="custom-control-label">Anuncio en televisión</label>
+			        </div>
+			      </div>
+			      <div class="custom-controls-stacked">
+			        <div class="custom-control custom-checkbox">
+			          <input name="checkbox" id="checkbox_2" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="cartel"> 
+			          <label for="checkbox_2" class="custom-control-label">Carteles</label>
+			        </div>
+			      </div>
+			      <div class="custom-controls-stacked">
+			        <div class="custom-control custom-checkbox">
+			          <input name="checkbox" id="checkbox_3" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="amigo"> 
+			          <label for="checkbox_3" class="custom-control-label">Recomendación de amigo/familiar</label>
+			        </div>
+			      </div>
+			      <div class="custom-controls-stacked">
+			        <div class="custom-control custom-checkbox">
+			          <input name="checkbox" id="checkbox_4" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="google"> 
+			          <label for="checkbox_4" class="custom-control-label">Búsqueda por Google</label>
+			        </div>
+			      </div> 
+			      <span id="checkboxHelpBlock" class="form-text text-muted">(Opcional)</span>
+			    </div>
+			  </div>
+			  <div class="form-group col-12 col-md-6">
+			    <label for="descripcion">Descripción</label> 
+			    <textarea id="descripcion" name="descripcion" cols="40" rows="5" class="form-control" required="required"></textarea>
+			  </div> 
+			</div>
+			  <div class="form-group">
+			    <button name="submit" type="submit" class="btn btn-primary">Enviar</button>
+			  </div>
+			</form>
+		</div>
+		<!-- Footer -->
+		<footer class="footer text-center">
+			<p>Copyright © 2019 - I.E.S. Hermanos Machado | 2º Desarrollo de Aplicaciones Web | Irene Viñas Ostos</p>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
