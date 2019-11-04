@@ -16,6 +16,8 @@
 	background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     height: 100vh;   
     margin-bottom: 0;
 }
@@ -64,6 +66,8 @@
 .galeria .foto{
 	height: 30vh;
 	background-size: cover !important;
+	-webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
 }
 
 .footer{
@@ -75,6 +79,8 @@
     background: linear-gradient(90deg,#0e5f80c4,#0e5f80c4),url(../img/galeria-5.jpg);
     background-blend-mode: normal;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     min-height: 90vh;
     color: white;
 }
